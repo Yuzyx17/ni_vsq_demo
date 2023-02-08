@@ -1,1 +1,0 @@
-start jlink-image\bin\javaw -jar modules\ni_vsq_demo-1.0-ALPHA.jar
