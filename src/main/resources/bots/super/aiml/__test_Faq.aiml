@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: picture.aiml -->
+<!-- File: __test_Faq.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
 <!-- Last modified: February 09, 2023 -->
 <!--  -->
@@ -15,19 +15,18 @@
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
-<category><pattern>SHOW ME *</pattern>
-<template><srai>PICTUREBLAB <star/></srai><sraix hint="pic">SHOW ME <star/></sraix></template>
+<category><pattern>HOW TO GET NATIONAL ID</pattern>
+<template>Here is how</template>
 </category>
-<category><pattern>PICTUREBLAB *</pattern>
+<category><pattern>*</pattern>
+<template><srai>UDC</srai></template>
+</category>
+<category><pattern>UDC</pattern>
 <template><random>
-<li>Here you are.</li>
-<li>I hope you like this picture.</li>
-<li>I have this picture.</li>
-<li>There you go.</li>
-<li>Look at that <star/>.</li>
-<li>This is what <star/> looks like.</li>
-<li>I found this pic of <star/>.</li>
-<li>I've displayed a picture for you.</li>
-</random></template>
+            <li><srai>RANDOM PICKUP LINE</srai></li>
+            <li><srai>INQUIRY AGE</srai></li>
+            <li><srai>INQUIRY GENDER</srai></li>
+            <li><srai>INQUIRY LOCATION</srai></li>
+            </random></template>
 </category>
 </aiml>
